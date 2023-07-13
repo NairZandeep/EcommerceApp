@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        <a (click)="navigateTo('item')">Items</a>
+        <br>
+        <a (click)="navigateTo('cart')">Cart</a>
+        <br>
+      </div>
+      <div class="col-9">
+        <app-items *ngIf="loadComponent === 'item'"/>
+        <app-cart *ngIf="loadComponent === 'cart'"/>
+      </div> 
+                  
+</div>
+
